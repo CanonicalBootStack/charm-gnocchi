@@ -73,6 +73,9 @@ class TestRegisteredHooks(test_utils.TestRegisteredHooks):
                 'init_db': (
                     'db.synced',
                 ),
+                'render_config': (
+                    'config.rendered',
+                ),
             },
         }
         # test that the hooks were registered via the

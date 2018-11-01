@@ -44,6 +44,7 @@ def disable_services():
 
 
 @reactive.when(*required_interfaces)
+@reactive.when_not('config.rendered')
 def render_config(*args):
     """Render the configuration for charm when all the interfaces are
     available.
